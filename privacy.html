@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Onsite</title>
+<meta name="description" content="Onsite's privacy policy: what data the app accesses, why, and where it goes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap site-header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-word">onsite</span>
+      <svg class="logo-pin" viewBox="0 0 180 180" fill="none" aria-hidden="true">
+        <path d="M90 24C60.7 24 37 47.7 37 77c0 39.4 45.3 76 50.6 80.1a3.8 3.8 0 0 0 4.8 0C97.7 153 143 116.4 143 77c0-29.3-23.7-53-53-53Z" fill="#2563eb"/>
+        <circle cx="90" cy="76" r="26" fill="#ffffff"/>
+      </svg>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<article class="wrap policy">
+  <h1>Onsite — Privacy Policy</h1>
+  <p class="updated">Last updated: September 30, 2026</p>
+
+  <p>Onsite ("the app") is a scheduling and client-management app for mobile service
+  professionals (hairstylists, massage therapists, groomers, trainers, and similar
+  businesses). This policy explains what data the app touches, why, and where it goes.</p>
+
+  <p><strong>The short version: Onsite is local-only. There is no Onsite server, no
+  operator account, and no analytics or advertising SDK. Your business data lives on
+  your own device.</strong></p>
+
+  <h2>Who this covers</h2>
+  <p>This policy is written for the <strong>operator</strong> — the person who installs
+  Onsite to run their business. Onsite has no separate app or account for the
+  operator's clients; clients are contacts the operator manages inside their own copy
+  of the app.</p>
+
+  <h2>Data Onsite accesses, and why</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why Onsite asks for it</th><th>Where it goes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Contacts</strong> (read-only)</td>
+        <td>One-time import of your phone contacts into your Onsite client list, only when you tap "Import from Contacts."</td>
+        <td>Copied into the app's local database on your device. Never uploaded, never read again unless you re-import.</td>
+      </tr>
+      <tr>
+        <td><strong>Calendar</strong> (read-only)</td>
+        <td>Import personal events from your device calendar so Onsite can show them alongside your bookings and avoid scheduling over them. Only requested when you tap "Import."</td>
+        <td>Copied into the app's local database. Onsite never writes to or modifies your calendar.</td>
+      </tr>
+      <tr>
+        <td><strong>Location</strong> (foreground only)</td>
+        <td>Automatically marking an appointment complete when you leave a client's location, and an optional "On My Way" live ETA you start manually for a specific trip.</td>
+        <td>Used on-device. Onsite never collects location in the background. Coordinates for an active ETA trip are sent to a routing service — see Third-Party Services below.</td>
+      </tr>
+      <tr>
+        <td><strong>Notifications</strong></td>
+        <td>Appointment reminders.</td>
+        <td>Generated and shown entirely on your device (local notifications).</td>
+      </tr>
+      <tr>
+        <td><strong>Photos/media</strong> (optional)</td>
+        <td>Branding — your logo appears in the app's header, if you choose to upload one.</td>
+        <td>Chosen by you from your device's photo picker; copied into the app's private storage. Never uploaded anywhere.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Onsite does <strong>not</strong> request background location, does not read your
+  SMS messages, and does not read your contacts or calendar except during an import
+  you explicitly trigger.</p>
+
+  <h2>Data Onsite does NOT collect</h2>
+  <ul>
+    <li>No user accounts, no login, no password.</li>
+    <li>No analytics SDK, no crash-reporting SDK, no advertising SDK.</li>
+    <li>No data is sold, rented, or used for advertising — Onsite shows no ads.</li>
+    <li>No client data is ever transmitted to a server operated by Onsite, because no
+      such server exists. All appointment, client, and revenue records stay in a local
+      database on your device.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>Because Onsite has no server of its own, a few features call free, no-account,
+  third-party services directly from your device:</p>
+  <ul>
+    <li><strong>OpenStreetMap (Nominatim / Photon)</strong> — turns an address you type
+      into map coordinates, so the app can calculate drive times and show a pin. Only
+      the address text is sent; no client name or other details.</li>
+    <li><strong>OSRM</strong> (router.project-osrm.org) — calculates drive time/ETA
+      between two points for the optional "On My Way" feature. Only two coordinate
+      pairs are sent.</li>
+    <li><strong>Google Maps</strong> — tapping "Get Directions" opens the Google Maps
+      app on your phone with an address you chose. This hands off to another app on
+      your phone; Onsite has no Google Maps API key and sends Google no analytics.</li>
+    <li><strong>Your phone's own Messaging app</strong> — tapping a message action opens
+      your phone's default SMS app with a prefilled message for you to review and send.
+      Onsite never sends the message itself.</li>
+  </ul>
+  <p>None of these services receive your name, your business identity, or your
+  client's identity — only the specific coordinates or address text needed to answer
+  that one request.</p>
+  <p><em>(Planned, not yet active: an optional Twilio SMS integration where the
+  operator connects their own Twilio account. This page will be updated before that
+  feature ships.)</em></p>
+
+  <h2>Where your data lives, and backup</h2>
+  <p>All business data is stored in a local database on your device. Two things can
+  copy it off the device, both under your control: your phone's own OS backup (Google
+  Account backup / iCloud), if enabled, and a manual export you trigger yourself to a
+  location you choose. Onsite has no way to access, read, or restore your data
+  remotely.</p>
+
+  <h2>Data deletion</h2>
+  <p>Uninstalling Onsite deletes all locally stored data on that device. Because
+  Onsite keeps no server-side copy, removing the app is the deletion.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Onsite is a business tool for adult service professionals and is not directed at,
+  or knowingly used to collect data from, children.</p>
+
+  <h2>Security</h2>
+  <p>Onsite relies on your device's own operating-system security. Because there is no
+  Onsite account or password, an optional <strong>App Lock</strong> feature (off by
+  default) can require your phone's biometric or a PIN before the app's contents are
+  shown.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If what Onsite collects or how changes, this page will be updated and the "Last
+  updated" date above will change accordingly.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:onsitegeoschedule@gmail.com">onsitegeoschedule@gmail.com</a></p>
+</article>
+
+<footer class="site">
+  <div class="wrap site-footer-inner">
+    <span>© 2026 Onsite. All rights reserved.</span>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:onsitegeoschedule@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
