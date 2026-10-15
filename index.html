@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Onsite — Scheduling for mobile service pros</title>
 <meta name="description" content="Onsite is a scheduling app for mobile service professionals — hairstylists, massage therapists, groomers, trainers. No cloud account, no ads, your data stays on your phone.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,16 +19,15 @@
         <circle cx="90" cy="76" r="26" fill="#ffffff"/>
       </svg>
     </a>
-    <nav class="site-nav">
-      <a href="#features">Features</a>
-      <a href="privacy.html">Privacy</a>
+    <nav class="site-nav nav nav-pills" aria-label="Site">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <span class="badge"><span class="dot"></span>Coming soon to Google Play</span>
     <h1>Scheduling built for people who work at their clients' locations.</h1>
     <p class="lede">
       Onsite is a scheduling app for hairstylists, massage therapists, mobile groomers,
@@ -44,30 +44,51 @@
 <section class="features" id="features">
   <div class="wrap">
     <h2>What Onsite does</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3><span class="feature-icon">🎯</span> Smart Picks: less driving, more clients</h3>
-        <p>Onsite suggests the days and times that fit the route you are already driving, so you spend less on gas and time between clients. You set how far you will drive between stops, and Smart Picks fills the gaps inside that zone while keeping each client's due date in view.</p>
+    <div class="row g-4">
+      <div class="col-lg-6">
+          <div class="feature-card lead h-100">
+              <h3><span class="feature-icon">🎯</span> Smart Picks: less driving, more clients</h3>
+              <p>Onsite suggests the days and times that fit the route you are already driving, so you spend less on gas and time between clients. You set how far you will drive between stops, and Smart Picks fills the gaps inside that zone while keeping each client's due date in view.</p>
+              <ul class="lead-points">
+                <li><strong>See the real cost of every day.</strong> A week-at-a-glance strip shows how many minutes a visit would add to your drive, with the best day starred. A day on the far side of town is labelled as such, so an empty day never looks better than it is.</li>
+                <li><strong>Two lists, so you choose the trade.</strong> "Best for your route" keeps your driving tight. A second list favours the client, whether they are overdue or not yet due, and tells you plainly what it costs: "3 days sooner, adds about 12 min of driving."</li>
+                <li><strong>Rescheduling that makes sense.</strong> Moving a visit suggests the days closest to the one you had, not just the next open slot.</li>
+              </ul>
+          </div>
       </div>
-      <div class="feature-card">
-        <h3><span class="feature-icon">📅</span> Smart scheduling</h3>
-        <p>Day, week, and month views. Recurring visits on a cadence you define, so you always know who is due back.</p>
-      </div>
-      <div class="feature-card">
-        <h3><span class="feature-icon">👥</span> Client management</h3>
-        <p>Import contacts from your phone, a vCard, or a CSV. Track service history, notes, and how often each client needs you back.</p>
-      </div>
-      <div class="feature-card">
-        <h3><span class="feature-icon">🗺️</span> Drive-time aware</h3>
-        <p>See distance to your next stop and get directions in one tap. Optional live "On My Way" ETA you start per trip — never tracked in the background.</p>
-      </div>
-      <div class="feature-card">
-        <h3><span class="feature-icon">💰</span> Revenue tracking</h3>
-        <p>Totals by day, week, month, quarter, or year, broken down by service. Mileage estimates for tax season.</p>
-      </div>
-      <div class="feature-card">
-        <h3><span class="feature-icon">🔒</span> Optional App Lock</h3>
-        <p>Add a PIN or biometric lock so a client browsing your phone can't see your other clients.</p>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-sm-6">
+              <div class="feature-card h-100">
+                  <h3><span class="feature-icon">📅</span> Smart scheduling</h3>
+                  <p>Day, week, and month views. Recurring visits on a cadence you define, so you always know who is due back.</p>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="feature-card h-100">
+                  <h3><span class="feature-icon">👥</span> Client management</h3>
+                  <p>Import contacts from your phone, a vCard, or a CSV. Track service history, notes, and how often each client needs you back.</p>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="feature-card h-100">
+                  <h3><span class="feature-icon">🗺️</span> Drive-time aware</h3>
+                  <p>See distance to your next stop and get directions in one tap. Optional live "On My Way" ETA you start per trip — never tracked in the background.</p>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="feature-card h-100">
+                  <h3><span class="feature-icon">💰</span> Revenue tracking</h3>
+                  <p>Totals by day, week, month, quarter, or year, broken down by service. Mileage estimates for tax season.</p>
+              </div>
+          </div>
+          <div class="col-12">
+              <div class="feature-card h-100">
+                  <h3><span class="feature-icon">🔒</span> Optional App Lock</h3>
+                  <p>Add a PIN or biometric lock so a client browsing your phone can't see your other clients.</p>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
