@@ -25,6 +25,10 @@ body {
   color: var(--ink);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   line-height: 1.55;
+  /* Short pages: keep the footer at the bottom of the window. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap {
@@ -242,6 +246,7 @@ header.site {
 
 /* Footer */
 footer.site {
+  margin-top: auto;
   background: #333333;
   padding: 32px 0;
 }
@@ -320,6 +325,41 @@ footer.site {
   .hero p.lede {
     font-size: 17px;
   }
+}
+
+/* About */
+.about {
+  padding: 64px 0 96px;
+}
+
+.about-narrow {
+  max-width: 760px;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 36px;
+}
+
+.about h3 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+.about-list {
+  padding-left: 20px;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+.about p {
+  color: var(--ink-soft);
+  font-size: 16px;
 }
 
 /* Pricing */
