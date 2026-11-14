@@ -29,15 +29,16 @@
 
 <article class="wrap policy">
   <h1>Onsite — Privacy Policy</h1>
-  <p class="updated">Last updated: September 30, 2026</p>
+  <p class="updated">Last updated: November 13, 2026</p>
 
   <p>Onsite ("the app") is a scheduling and client-management app for mobile service
   professionals (hairstylists, massage therapists, groomers, trainers, and similar
   businesses). This policy explains what data the app touches, why, and where it goes.</p>
 
-  <p><strong>The short version: Onsite is local-only. There is no Onsite server, no
-  operator account, and no analytics or advertising SDK. Your business data lives on
-  your own device.</strong></p>
+  <p><strong>The short version: Onsite stores your business data on your own device.
+  There is no Onsite server, no operator account, and no analytics or advertising SDK.
+  Addresses and map coordinates are sent to free map services only when you use
+  address, drive-time or "On My Way" features.</strong></p>
 
   <h2>Who this covers</h2>
   <p>This policy is written for the <strong>operator</strong> — the person who installs
@@ -63,8 +64,8 @@
       </tr>
       <tr>
         <td><strong>Location</strong> (foreground only)</td>
-        <td>Automatically marking an appointment complete when you leave a client's location, and an optional "On My Way" live ETA you start manually for a specific trip.</td>
-        <td>Used on-device. Onsite never collects location in the background. Coordinates for an active ETA trip are sent to a routing service — see Third-Party Services below.</td>
+        <td>If you turn on GPS auto-complete, Onsite checks your position once when the app is open and marks an appointment complete if you are within about 150 metres of that client's address around the appointment time. Also an optional "On My Way" live ETA you start manually for a specific trip, and, when you choose "Current location" as the starting point, the route view and route planner.</td>
+        <td>Used on-device. Onsite never collects location in the background. Coordinates for an active ETA trip are sent to a routing service, and a route you open in your maps app starts from where you are — see Third-Party Services below.</td>
       </tr>
       <tr>
         <td><strong>Notifications</strong></td>
@@ -74,7 +75,7 @@
       <tr>
         <td><strong>Photos</strong> (optional)</td>
         <td>A profile photo for a client, if you choose one. Onsite never browses your photo library: the system photo picker hands over only the one picture you select.</td>
-        <td>Shrunk and stored in the app's private storage on your device. Never uploaded anywhere. It travels only inside a backup file you export yourself.</td>
+        <td>Shrunk and stored in the app's private storage on your device. Onsite never uploads it. It leaves the phone only inside a backup: one you export yourself, or your phone's own OS backup if you have it turned on.</td>
       </tr>
       <tr>
         <td><strong>Feedback</strong> (optional)</td>
@@ -108,9 +109,12 @@
     <li><strong>OSRM</strong> (router.project-osrm.org) — calculates drive time/ETA
       between two points for the optional "On My Way" feature. Only two coordinate
       pairs are sent.</li>
-    <li><strong>Google Maps</strong> — tapping "Get Directions" opens the Google Maps
-      app on your phone with an address you chose. This hands off to another app on
-      your phone; Onsite has no Google Maps API key and sends Google no analytics.</li>
+    <li><strong>Your maps app</strong> (Google Maps, Waze, Apple Maps, or your phone's
+      default) — tapping "Map" on an appointment opens the app you picked in Settings with
+      that client's address. Opening a route hands Google Maps (or Apple Maps on iPhone) the
+      start point and the stops' coordinates. This hands off to another app on your phone;
+      Onsite has no maps API key and sends these companies no analytics. If you pick Waze
+      and it isn't installed, the link opens Waze's website in your browser instead.</li>
     <li><strong>Your phone's own Messaging app</strong> — tapping a message action opens
       your phone's default SMS app with a prefilled message for you to review and send.
       Onsite never sends the message itself.</li>
@@ -119,16 +123,41 @@
   client's identity — only the specific coordinates or address text needed to answer
   that one request.</p>
 
+  <h2>Smart Picks</h2>
+  <p>Smart Picks suggests booking times using the appointments, saved locations and
+  addresses already stored on your device. It adds no new data collection. Any address
+  lookup it triggers goes to the map services listed above.</p>
+
   <h2>Where your data lives, and backup</h2>
   <p>All business data is stored in a local database on your device. Two things can
   copy it off the device, both under your control: your phone's own OS backup (Google
   Account backup / iCloud), if enabled, and a manual export you trigger yourself to a
   location you choose. Onsite has no way to access, read, or restore your data
   remotely.</p>
+  <p><strong>Why Onsite does not rely on your phone's backup.</strong> Your phone's
+  backup is worth having on, but it is not something you can count on. Google Account
+  backup keeps at most 25 MB for each app. Once Onsite's data, including client photos,
+  grows past that, Android stops backing it up and does not tell you. The backup still
+  shows on your account and looks fine, but it holds an old copy, and you only find out
+  when you need it. On iPhone, iCloud backup has no per-app limit, but it stops when your
+  iCloud storage is full (Apple gives 5 GB free, shared with your photos). The phone
+  shows a warning, but it is easy to miss. On both, the phone decides on its own when a
+  backup runs, and phone backup does not cover files in Downloads or on an SD card.</p>
+  <p>The backup to rely on is the one Onsite makes: Settings › Your Data › Back up my
+  data. It saves a complete copy of everything, at the moment you choose, to a place you
+  choose, such as Google Drive, Dropbox or your email. You can see the file, so you know
+  it is there.</p>
 
   <h2>Data deletion</h2>
   <p>Uninstalling Onsite deletes all locally stored data on that device. Because
-  Onsite keeps no server-side copy, removing the app is the deletion.</p>
+  Onsite keeps no server-side copy, removing the app is the deletion. Backup files you
+  exported, and your phone's own OS backups, stay where you saved them until you delete
+  them.</p>
+
+  <h2>Your choices and rights</h2>
+  <p>You control your data on your device. To access, correct or delete it, use the app or
+  uninstall it. We hold no copy, so we cannot look up, change or delete your data for you.
+  Questions or requests about this policy: use the contact address below.</p>
 
   <h2>Children's privacy</h2>
   <p>Onsite is a business tool for adult service professionals and is not directed at,
@@ -153,6 +182,7 @@
     <span>© 2026 Onsite. All rights reserved.</span>
     <nav>
       <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
       <a href="online-booking.html">For businesses</a>
       <a href="mailto:onsitegeoschedule@gmail.com">Contact</a>
     </nav>
